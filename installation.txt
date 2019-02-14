@@ -1,0 +1,17 @@
+Rque : le travail n'est pas finalisé (je n'ai pas eu assez de temps pour le finir, j'ai passer au moins une journée morcelée, 
+une heure par ci une heure par la)
+je pense qu'il faut au moins 1/2 journée pour le finalisé.
+
+procedures d'installation :
+
+il faut un serveur apache et php7.0 et un Mysql 5.6/5.7 
+
+1- executer le fichier database_crm.sql pour installer la base 
+2- executer le fichier  ajout_index.sql pour ajouter les index
+3 - mettre le dossier testTechnique dans le dossier www/
+4- dans le console on execute la commande suivante : composer install
+4- l'url  est : http://localhost/testTechnique/ ou bien l'adresse ip du serveur à la palce du localhost
+5- 2 users sont déjà créer : admin/admin et test/admin
+6- pour installer phpunit : composer require phpunit/phpunit
+7- pour executer les tests unitaire : vendor\bin\phpunit --bootstrap vendor\autoload.php
+ (je n'ai pas pu aller plus loin dans les tests unitaire et problème avec ma config (il faut le deboguer), contrainte de temps)

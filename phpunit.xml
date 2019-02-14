@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit colors="true" 
+         bootstrap="vendor/autoload.php">
+    <testsuite name="Leboncoin tests">
+        <directory>./tests</directory>
+    </testsuite>
+    <filter>
+        <whitelist proceessUncoveredFromWhitelist="true">
+            <directory suffic=".php">tests/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
